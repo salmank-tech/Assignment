@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { Student, Country } from "src/app/models/Student";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-student",
@@ -15,7 +16,7 @@ export class StudentComponent implements OnInit {
   submitted: boolean;
   country: Country[];
 
-  constructor() {}
+  constructor(public router: Router) {}
 
   ngOnInit() {
     this.country = [
@@ -118,5 +119,6 @@ export class StudentComponent implements OnInit {
     this.isEdit = true;
     this.editId = data.id;
     this.studentForm.patchValue(data);
+    // this.router.navigate(["detail-view", data]);
   }
 }

@@ -11,6 +11,8 @@ import { StudentComponent } from "./components/student/student.component";
 import { LoginComponent } from "./components/login/login.component";
 import { DefaultLayoutComponent } from "./components/default-layout/default-layout.component";
 import { DetailViewComponent } from "./components/detail-view/detail-view.component";
+import { HttpClientModule } from "@angular/common/http";
+import { ListViewComponent } from "./components/list-view/list-view.component";
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { DetailViewComponent } from "./components/detail-view/detail-view.compon
     LoginComponent,
     DefaultLayoutComponent,
     DetailViewComponent,
+    ListViewComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +31,7 @@ import { DetailViewComponent } from "./components/detail-view/detail-view.compon
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

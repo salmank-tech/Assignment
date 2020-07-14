@@ -53,7 +53,7 @@
         <p
           class="error"
           *ngIf="
-            studentForm.get('password').hasError('minLength') &&
+            studentForm.get('password').hasError('minlength') &&
             studentForm.get('password').touched
           "
         >
@@ -139,44 +139,3 @@
     </div>
   </form>
 </div>
-<!-- 
-<div class="container">
-  <div class="row">
-    <div class="col-2">
-      NAME
-    </div>
-    <div class="col-4">
-      EMAIL
-    </div>
-    <div class="col-2">
-      COUNTRY
-    </div>
-    <div class="col-2">
-      GENDER
-    </div>
-    <div class="col-1">
-      ACTIVE
-    </div>
-    <div class="col-1"></div>
-  </div>
-  <div class="row" *ngFor="let data of students">
-    <div class="col-2">
-      {{ data.name }}
-    </div>
-    <div class="col-4">
-      {{ data.email }}
-    </div>
-    <div class="col-2">
-      {{ data.country }}
-    </div>
-    <div class="col-2">
-      {{ data.gender }}
-    </div>
-    <div class="col-1">
-      {{ data.status }}
-    </div>
-    <div class="col-1">
-      <button (click)="edit(data)">Edit</button>
-    </div>
-  </div>
-</div> -->

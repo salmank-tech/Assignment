@@ -6,6 +6,7 @@ import { StudentComponent } from "./components/student/student.component";
 import { LoginComponent } from "./components/login/login.component";
 import { DefaultLayoutComponent } from "./components/default-layout/default-layout.component";
 import { DetailViewComponent } from "./components/detail-view/detail-view.component";
+import { ListViewComponent } from "./components/list-view/list-view.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/login", pathMatch: "full" },
@@ -30,7 +31,11 @@ const routes: Routes = [
         component: StudentComponent,
       },
       {
-        path: "detail-view",
+        path: "list-view",
+        component: ListViewComponent,
+      },
+      {
+        path: "detail-view/:id",
         component: DetailViewComponent,
       },
     ],

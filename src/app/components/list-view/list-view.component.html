@@ -1,4 +1,4 @@
-<h1>DETAIL VIEW</h1>
+<h1>LIST VIEW</h1>
 <div class="container">
   <div class="row">
     <div class="col-4">
@@ -10,16 +10,17 @@
     <div class="col-4">
       EMAIL
     </div>
-    <div class="col-1">
+    <!-- <div class="col-2">
       F-NAME
     </div>
-    <div class="col-1">
+    <div class="col-2">
       L_NAME
-    </div>
+    </div> -->
+    <div class="col-2"></div>
   </div>
-  <div class="row" *ngIf="student && student.id">
+  <div class="row" *ngFor="let student of studentData">
     <div class="col-4">
-      <img [src]="student && student.avatar" />
+      <img [src]="student.avatar" />
     </div>
     <div class="col-2">
       {{ student.id }}
@@ -27,11 +28,14 @@
     <div class="col-4">
       {{ student.email }}
     </div>
-    <div class="col-1">
+    <!-- <div class="col-2">
       {{ student.first_name }}
     </div>
-    <div class="col-1">
+    <div class="col-2">
       {{ student.last_name }}
+    </div> -->
+    <div class="col-2">
+      <button (click)="edit(student.id)">View</button>
     </div>
   </div>
 </div>
