@@ -8,6 +8,9 @@ import { HomeComponent } from "./components/home/home.component";
 import { CommonModule } from "@angular/common";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { StudentComponent } from "./components/student/student.component";
+import { LoginComponent } from "./components/login/login.component";
+import { DefaultLayoutComponent } from "./components/default-layout/default-layout.component";
+import { DetailViewComponent } from "./components/detail-view/detail-view.component";
 
 @NgModule({
   declarations: [
@@ -15,6 +18,9 @@ import { StudentComponent } from "./components/student/student.component";
     NavbarComponent,
     HomeComponent,
     StudentComponent,
+    LoginComponent,
+    DefaultLayoutComponent,
+    DetailViewComponent,
   ],
   imports: [
     BrowserModule,

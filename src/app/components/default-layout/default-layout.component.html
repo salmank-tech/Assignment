@@ -1,0 +1,177 @@
+<app-navbar></app-navbar>
+<div class="content" role="main">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- <form [formGroup]="studentForm">
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input
+        type="text"
+        formControlName="name"
+        class="form-control"
+        id="inputEmail3"
+        placeholder="Name"
+        autocomplete="off"
+      />
+      <p
+        class="error"
+        *ngIf="
+          studentForm.get('name').hasError('required') &&
+          studentForm.get('name').touched
+        "
+      >
+        Name is required
+      </p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input
+        type="email"
+        formControlName="email"
+        class="form-control"
+        id="inputEmail3"
+        placeholder="Email"
+        autocomplete="off"
+      />
+      <p
+        class="error"
+        *ngIf="
+          studentForm.get('email').hasError('required') &&
+          studentForm.get('email').touched
+        "
+      >
+        Email is required
+      </p>
+      <p
+        class="error"
+        *ngIf="
+          studentForm.get('email').hasError('email') &&
+          studentForm.get('email').touched
+        "
+      >
+        Invalid Format
+      </p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Country</label>
+    <div class="col-sm-10">
+      <select
+        formControlName="country"
+        class="form-control"
+        aria-placeholder="Country"
+      >
+        <option *ngFor="let data of country" value="{{ data.description }}">{{
+          data.description
+        }}</option>
+      </select>
+      <p
+        class="error"
+        *ngIf="
+          studentForm.get('country').hasError('required') &&
+          studentForm.get('country').touched
+        "
+      >
+        Country is required
+      </p>
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            formControlName="gender"
+            id="gridRadios1"
+            value="Male"
+            checked
+          />
+          <label class="form-check-label" for="gridRadios1">
+            Male
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            formControlName="gender"
+            id="gridRadios2"
+            value="Female"
+          />
+          <label class="form-check-label" for="gridRadios2">
+            Female
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <div class="col-sm-2">Active</div>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          formControlName="status"
+          id="gridCheck1"
+        />
+        <label class="form-check-label" for="gridCheck1"> </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="button" (click)="submit()" class="btn btn-primary">
+        Submit
+      </button>
+    </div>
+  </div>
+</form> -->
+<!-- 
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+      NAME
+    </div>
+    <div class="col-4">
+      EMAIL
+    </div>
+    <div class="col-2">
+      COUNTRY
+    </div>
+    <div class="col-2">
+      GENDER
+    </div>
+    <div class="col-1">
+      ACTIVE
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row" *ngFor="let data of students">
+    <div class="col-2">
+      {{ data.name }}
+    </div>
+    <div class="col-4">
+      {{ data.email }}
+    </div>
+    <div class="col-2">
+      {{ data.country }}
+    </div>
+    <div class="col-2">
+      {{ data.gender }}
+    </div>
+    <div class="col-1">
+      {{ data.status }}
+    </div>
+    <div class="col-1">
+      <button (click)="edit(data)">Edit</button>
+    </div>
+  </div>
+</div> -->
